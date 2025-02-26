@@ -27,6 +27,47 @@ body {
     font-style: italic;
 }  
 
+.content-section {
+    display: none;
+}
+
+.content-section.active {
+    display: block;
+}
+
+.navbar {
+    width: 90%;
+    margin: 15px auto;
+    background-color: #4a0000;
+    border-radius: 20px;
+    justify-content: center;
+}
+
+.navbar-nav {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.navbar-nav .nav-link {
+    color: #8e665f;
+    font-size: 20px;
+}
+
+.navbar-nav .nav-link:hover {
+    text-decoration: underline;
+    color: #b3a09c;
+}
+
 .navbar-nav .nav-link.active {
     text-decoration: underline;
+    color: white;
+}
+
+.inactive-link {
+    pointer-events: none;
+    cursor: default;
 }
