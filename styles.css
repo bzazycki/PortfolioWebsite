@@ -60,6 +60,7 @@ body {
 .navbar-nav .nav-link:hover {
     text-decoration: underline;
     color: #b3a09c;
+    cursor: pointer;
 }
 
 .navbar-nav .nav-link.active {
