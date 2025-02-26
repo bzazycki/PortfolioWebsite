@@ -4,10 +4,18 @@ function showSection(sectionId) {
     // Remove active tag from all sections
     document.querySelectorAll('.content-section').forEach(section => {
         section.classList.remove('active');
+        // set display attribute (invisible)
+        section.style.display = 'none';
     });
 
-    // Add active tag to given section
-    document.getElementById(sectionId).classList.add('active'); 
+    // set const variable for current section
+    const section = document.getElementById(sectionId);
+
+    // set display attribute (visible)
+    section.style.display = 'block';
+    
+    // set proper timeout for fade-in/fade-out
+    setTimeout(() => {section.classList.add('active');}, 10);
 }
 
 
