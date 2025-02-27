@@ -2,7 +2,14 @@ body {
     background-color: #990001;
     font-family: 'Space Mono', monospace;
     color: white;
+    padding-top: 58px;
 }
+
+h2 {
+    font-weight: 700;
+    font-size: xxx-large;
+}
+
 .space-mono-regular {
     font-family: "Space Mono", serif;
     font-weight: 400;
@@ -40,12 +47,17 @@ body {
 }
 
 .navbar {
+    position: fixed;
+    top: 15px; 
+    left: 50%; 
+    transform: translateX(-50%); 
     width: 90%;
-    margin: 15px auto;
     background-color: #4a0000;
     border-radius: 20px;
     justify-content: center;
+    z-index: 1000;
 }
+
 
 .navbar-nav {
     display: flex;
@@ -75,4 +87,9 @@ body {
 .inactive-link {
     pointer-events: none;
     cursor: default;
+}
+
+.body-container {
+    width: 70%;
+    margin-top: 3rem !important;
 }

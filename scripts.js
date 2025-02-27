@@ -32,6 +32,8 @@ document.addEventListener("DOMContentLoaded", function() {
     navLinks.forEach(link => {
         // Add a click event listener
         link.addEventListener('click', function() {
+            // Scroll to top
+            window.scrollTo({ top: 0, behavior: "smooth" });
             // Remove the 'active' class from all nav-links
             navLinks.forEach(navLink => navLink.classList.remove('active'));
             // Add the 'active' class to the clicked nav-link
