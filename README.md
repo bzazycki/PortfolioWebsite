@@ -1,2 +1,2 @@
 # benzazycki.com
-My personal portfolio website. 
+My personal portfolio website (under construction).
