@@ -3,104 +3,220 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Portfolio Website</title>
-    
-    <!--Tab favicon-->
-    <link rel="icon" type="image/png" href="imagesDir/CircularWordmark.png">
-    
-    <!--Space Mono from Google fonts-->
+    <title>Portfolio - Ben Zazycki</title>
+    <link rel="icon" type="image/png" href="images/CircularWordmark.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=fallback" rel="stylesheet">
-    
-    <!--Bootstrap-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-
-    <!--External Stylesheet-->
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=fallback"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-  <!--Navbar-->
-  <nav class="navbar navbar-expand"> 
-    <div class="navbar-nav">
-        <a class="navbar-brand ps-3 inactive-link" href="#"><img src="imagesDir/CircularWordmark.png" alt="wordmark logo" height="40"></a> 
-        <a class="nav-link active px-3" onclick="showSection('home')">Home</a>
-        <a class="nav-link px-3" onclick="showSection('page1')">Page 1</a>
-        <a class="nav-link px-3" onclick="showSection('page2')">Page 2</a>
-        <a class="nav-link px-3" onclick="showSection('page3')">Page 3</a>
-    </div>
-  </nav>
+    <nav class="navbar navbar-expand">
+        <div class="navbar-nav">
+            <a class="navbar-brand ps-3 inactive-link" href="#"><img src="images/CircularWordmark.png"
+                    alt="wordmark logo" height="40"></a>
+            <a class="nav-link active px-3" onclick="showSection('home')">Home</a>
+            <a class="nav-link px-3" onclick="showSection('projects')">Projects</a>
+            <a class="nav-link px-3" onclick="showSection('about')">About</a>
+        </div>
+    </nav>
+    <div class="container mt-4 body-container">
+        <div id="home" class="content-section">
+            <div style="height: 10px;"></div>
+            <div class="row">
+                <div class="col-md-12">
+                    <p class="w-100 info-text">Hi, I’m <b style="font-size: 24px;">Ben Zazycki</b>. I’m seeking
+                        internship opportunities for Summer 2026 in data science or
+                        software engineering, where I can apply my data analysis and software development skills to
+                        contribute to impactful projects.</p>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-md-5">
+                    <h4><b>Selected Projects</b></h4>
+                    <div style="height: 10px;"></div>
+                    <ul>
+                        <li class="info-text">Bioinformatics R/Python Pipeline</li>
+                        <li class="info-text">Full-Stack Chatbot Application</li>
+                        <li class="info-text">Medical Billing Data Analysis</li>
+                    </ul>
+                    <div style="height: 0%;"></div>
+                    <p class="info-text">See "Projects" tab for more detail.</p>
+                </div>
+                <div class="col-md-7 d-flex flex-row justify-content-around align-items-center">
+                    <a href="https://linkedin.com/in/bzazycki" target="_blank">
+                        <i class="fab fa-linkedin" style="font-size: 60px;"></i>
+                    </a>
+                    <a href="https://github.com/bzazycki" target="_blank">
+                        <i class="fab fa-github" style="font-size: 60px;"></i>
+                    </a>
+                    <a href="mailto:zazyckbw@miamioh.edu">
+                        <i class="far fa-envelope" style="font-size: 60px;"></i>
+                    </a>
+                    <a href="files/Resume.pdf" target="_blank">
+                        <i class="fa-solid fa-file" style="font-size: 60px;"></i>
+                    </a>
+                </div>
 
-  <!--Content Section Containers-->
-  <div class="container mt-4 body-container">
-    <div id="home" class="content-section">
-        <h2>Home</h2>
-        <br>
-        <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Volutpat lacus aenean tellus porttitor molestie. Gravida dolor facilisis malesuada hendrerit consequat. Lacinia velit porta mi augue, id mauris purus. Quisque iaculis nunc habitasse eu eu eros. Accumsan posuere himenaeos leo pharetra efficitur. Vel semper sodales himenaeos non viverra. Sapien eros iaculis nullam sollicitudin porttitor quis vivamus sollicitudin quisque.</p>
-        <p>Nunc posuere libero taciti; quisque magnis euismod magnis. Aliquam condimentum nascetur leo nam commodo neque nostra. Curae lectus diam proin nostra convallis mus facilisis sit. Maximus tempus leo curabitur consectetur sociosqu sed. Integer netus ullamcorper aliquam hendrerit aenean turpis ornare. Pulvinar nunc curabitur est rhoncus; bibendum fusce at. Mattis ex consequat condimentum dapibus dignissim ipsum. Primis lobortis commodo placerat cras augue magnis nostra.</p>
-        <p>Consequat pellentesque mauris eros; litora mattis diam? Cubilia praesent eleifend vel suscipit faucibus torquent pharetra parturient? Imperdiet sodales litora nec consequat scelerisque porta proin habitasse. Eros integer venenatis sodales ac vel netus hendrerit metus. Per elementum auctor tortor pulvinar cursus quis. Venenatis elit litora lacus risus in nullam risus habitasse. Porta vulputate primis tincidunt aliquam odio ipsum tempus. Proin curabitur ipsum nascetur in dolor proin cras. Cubilia pharetra scelerisque congue placerat facilisis.</p>
-        <p>Lacinia est cursus commodo purus natoque scelerisque interdum imperdiet. Litora sem egestas ex nostra; suscipit curae ipsum sit. Metus nullam nostra id tristique facilisis? Sodales proin proin rutrum tristique nullam. Euismod porta vestibulum dictumst pulvinar odio morbi vitae. Imperdiet bibendum mattis lobortis metus netus dolor rutrum a malesuada. Semper proin faucibus volutpat torquent congue fusce velit, morbi est. Neque quis laoreet curae elit nam sociosqu. Suspendisse quisque ut tempor nam massa orci efficitur eu.</p>
-        <p>Ipsum nulla tincidunt, imperdiet aliquam cubilia tempor lobortis tempus. Sollicitudin duis consequat nec commodo mollis etiam. Scelerisque rutrum dolor euismod nam fusce eget curabitur tempus diam. Nibh nulla sapien mauris eu viverra mus. Ultricies cubilia eleifend sit vestibulum lacus donec. Ut orci hac eros class tristique efficitur turpis. Est nec elementum duis pharetra netus porttitor?</p>
-        <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Volutpat lacus aenean tellus porttitor molestie. Gravida dolor facilisis malesuada hendrerit consequat. Lacinia velit porta mi augue, id mauris purus. Quisque iaculis nunc habitasse eu eu eros. Accumsan posuere himenaeos leo pharetra efficitur. Vel semper sodales himenaeos non viverra. Sapien eros iaculis nullam sollicitudin porttitor quis vivamus sollicitudin quisque.</p>
-        <p>Nunc posuere libero taciti; quisque magnis euismod magnis. Aliquam condimentum nascetur leo nam commodo neque nostra. Curae lectus diam proin nostra convallis mus facilisis sit. Maximus tempus leo curabitur consectetur sociosqu sed. Integer netus ullamcorper aliquam hendrerit aenean turpis ornare. Pulvinar nunc curabitur est rhoncus; bibendum fusce at. Mattis ex consequat condimentum dapibus dignissim ipsum. Primis lobortis commodo placerat cras augue magnis nostra.</p>
-        <p>Consequat pellentesque mauris eros; litora mattis diam? Cubilia praesent eleifend vel suscipit faucibus torquent pharetra parturient? Imperdiet sodales litora nec consequat scelerisque porta proin habitasse. Eros integer venenatis sodales ac vel netus hendrerit metus. Per elementum auctor tortor pulvinar cursus quis. Venenatis elit litora lacus risus in nullam risus habitasse. Porta vulputate primis tincidunt aliquam odio ipsum tempus. Proin curabitur ipsum nascetur in dolor proin cras. Cubilia pharetra scelerisque congue placerat facilisis.</p>
-        <p>Lacinia est cursus commodo purus natoque scelerisque interdum imperdiet. Litora sem egestas ex nostra; suscipit curae ipsum sit. Metus nullam nostra id tristique facilisis? Sodales proin proin rutrum tristique nullam. Euismod porta vestibulum dictumst pulvinar odio morbi vitae. Imperdiet bibendum mattis lobortis metus netus dolor rutrum a malesuada. Semper proin faucibus volutpat torquent congue fusce velit, morbi est. Neque quis laoreet curae elit nam sociosqu. Suspendisse quisque ut tempor nam massa orci efficitur eu.</p>
-        <p>Ipsum nulla tincidunt, imperdiet aliquam cubilia tempor lobortis tempus. Sollicitudin duis consequat nec commodo mollis etiam. Scelerisque rutrum dolor euismod nam fusce eget curabitur tempus diam. Nibh nulla sapien mauris eu viverra mus. Ultricies cubilia eleifend sit vestibulum lacus donec. Ut orci hac eros class tristique efficitur turpis. Est nec elementum duis pharetra netus porttitor?</p>
-        <br>
+            </div>
+        </div>
+        <div id="projects" class="content-section">
+            <div style="height: 20px;"></div>
+            <div class="row">
+                <div class="col-md-6">
+                    <h4>Bioinformatics R/Python Pipeline</h4>
+                    <div style="height: 10px;"></div>
+                    <p>Professor Chun Liang in Miami’s biology department has been mentoring me through an ongoing
+                        bioinformatics project. I am adapting and reimagining a pipeline originally developed by one of
+                        his graduate students, with the goal of aligning it to published “best practices” in single-cell
+                        RNA sequence analysis.. </p>
+                    <p>This project has helped me strengthen core data science skills, including writing high-quality
+                        code in R and Python, thorough data cleaning and preprocessing, exploratory data analysis,
+                        quality control, and reproducible pipeline design. Over the course of the work, I’ve become a
+                        more confident and capable data scientist.
+                    </p>
+                    <p>My collaboration with Dr. Liang began in Spring 2025, supported by the Miami University Hughes
+                        Scholarship Program. We are working toward a publication (timeline TBD). Eventually, our focus
+                        will shift from QC to downstream analysis, especially clustering with both traditional and
+                        machine learning–based methods.
+                    </p>
+                    <p class="info-text">Click <a href="https://github.com/bzazycki/ChickenEyePipeline"
+                            target="_blank">here</a> to see the GitHub repository.</p>
+                </div>
+
+                <div class="col-md-6" style="padding: 30px;">
+                    <img src="images/Bio_1.png" Project Image" class="img-fluid">
+                    <div style="height: 30px;"></div>
+                    <img src="images/Bio_2.png" Project Image" class="img-fluid">
+                </div>
+            </div>
+            <div style="height: 40px;"></div>
+            <div class="row">
+                <div class="col-md-6">
+
+                    <h4>Full-Stack AI Chatbot Application</h4>
+                    <div style="height: 10px;"></div>
+                    <p>In January 2025, I served as co–project manager of a 9-person team in a senior capstone design
+                        project. Our goal was to create a kiosk app for a homeless shelter, enabling staff to provide
+                        resources and guidance quickly to patrons. We built a full-stack application with an Android
+                        frontend (Java/Gradle) and a Python backend that queried the ChatGPT API with tailored context
+                        and resource information.
+                    </p>
+                    <p>As co-PM, I contributed to all aspects of development and maintained a top-down perspective of
+                        the project. This role gave me hands-on experience with frontend development, backend
+                        development, server administration, API integration, and technical leadership. </p>
+                    <p>The project was completed during a two-week Miami University study abroad program in Manchester,
+                        England, under the guidance of Dr. Kurt Johnson.</p>
+                    <div style="height: 0%;"></div>
+                    <p class="info-text">Click <a href="https://github.com/bzazycki/ManChatBot" target="_blank">here</a>
+                        to see the GitHub repository.</p>
+                </div>
+
+                <div class="col-md-6" style="padding: 30px;">
+                    <img src="images/Manc_1.png" alt="Project Image" class="img-fluid">
+                    <div style="height: 30px;"></div>
+                    <img src="images/Manc_2.png" alt="Project Image" class="img-fluid">
+                </div>
+            </div>
+
+            <div style="height: 40px;"></div>
+
+            <div class="row">
+                <div class="col-md-6">
+
+                    <h4>Medical Billing Data Analysis</h4>
+                    <div style="height: 10px;"></div>
+                    <p> In Summer 2024, I worked as a data analysis intern at Spirit Emergency Medical Transport in
+                        Greenville, Ohio. The company had significant unpaid invoices, and my role—alongside another
+                        intern—was to analyze billing data and recommend collection strategies.
+                    </p>
+                    <p>We designed workflows to extract data from their billing system, organize it into structured
+                        spreadsheets, and identify key trends. Our recommendations guided management on which accounts
+                        were worth pursuing, which should be sent to external collections, and which were not
+                        financially viable to chase.
+                    </p>
+                    <p>Over three months, I was directly responsible for $300,000 in remitted payments. This experience
+                        strengthened my ability to align technical work with business goals, communicate findings
+                        effectively, adapt to shifting requirements, and reconcile data from multiple sources.
+                    </p>
+                    <div style="height: 0%;"></div>
+                </div>
+
+                <div class="col-md-6" style="padding: 30px;">
+                    <img src="images/Spirit_1.png" alt="Project Image" class="img-fluid">
+                    <div style="height: 30px;"></div>
+                    <img src="images/Spirit_2.jpg" alt="Project Image" class="img-fluid">
+                </div>
+            </div>
+            <div style="height: 40px;"></div>
+        </div>
+
+        <div id="about" class="content-section">
+            <div style="height: 10px;"></div>
+            <div class="row">
+
+                <div class="col-md-3 d-flex flex-column">
+                    <p class="column-header">Education</p>
+                    <p>I'm a junior (class of 2027) computer science major at Miami University in Oxford, Ohio.</p>
+                    <p>I'm a member of the Honors College and Theta Tau Professional Engineering Fraternity. I'm a
+                        recipient of the Choose Ohio First Machine Learning Scholarship. I have minors in mathematics
+                        and statistics.</p>
+                </div>
+
+                <div class="col-md-3 d-flex flex-column">
+                    <p class="column-header">Skills</p>
+                    <ul>
+
+
+                        <li>Data Analysis</li>
+                        <li>Machine Learning</li>
+                        <li>Bioinformatics</li>
+                        <li>R</li>
+                        <li>Jupyter</li>
+                        <li>Pandas</li>
+                        <li>SQL</li>
+                        <li>Python</li>
+                        <li>HTML/CSS/JS</li>
+                        <li>Docker</li>
+                        <li>Java</li>
+                        <li>C++</li>
+                        <li>Linux</li>
+                        <li>Git</li>
+                    </ul>
+                </div>
+
+                <div class="col-md-3 d-flex flex-column">
+                    <p class="column-header">Experience</p>
+                    <p>Hughes Fellowship for Undergraduate Research, Miami University Biology Department, Summer 2025
+                    </p>
+                    <p>Data Analysis Internship, Spirit Emergency Medical Services, Greenville Ohio, Summer 2024</p>
+                </div>
+
+                <div class="col-md-3 d-flex flex-column">
+                    <p class="column-header">Coursework</p>
+                    <p>Intro to Machine Learning (CSE 432)</p>
+                    <p>Algorithms (CSE 374)</p>
+                    <p>Statistical Modeling (STA 363)</p>
+                    <p>Linear Algebra (MTH 222)</p>
+                    <p>Web Application Programming (CSE 383)</p>
+                    <p>Optimization (MTH 432)</p>
+                    <p>Systems (CSE 381)</p>
+
+                </div>
+
+            </div>
+        </div>
     </div>
-    <div id="page1" class="content-section">
-        <h2>Page 1</h2>
-        <br>
-        <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Volutpat lacus aenean tellus porttitor molestie. Gravida dolor facilisis malesuada hendrerit consequat. Lacinia velit porta mi augue, id mauris purus. Quisque iaculis nunc habitasse eu eu eros. Accumsan posuere himenaeos leo pharetra efficitur. Vel semper sodales himenaeos non viverra. Sapien eros iaculis nullam sollicitudin porttitor quis vivamus sollicitudin quisque.</p>
-        <p>Nunc posuere libero taciti; quisque magnis euismod magnis. Aliquam condimentum nascetur leo nam commodo neque nostra. Curae lectus diam proin nostra convallis mus facilisis sit. Maximus tempus leo curabitur consectetur sociosqu sed. Integer netus ullamcorper aliquam hendrerit aenean turpis ornare. Pulvinar nunc curabitur est rhoncus; bibendum fusce at. Mattis ex consequat condimentum dapibus dignissim ipsum. Primis lobortis commodo placerat cras augue magnis nostra.</p>
-        <p>Consequat pellentesque mauris eros; litora mattis diam? Cubilia praesent eleifend vel suscipit faucibus torquent pharetra parturient? Imperdiet sodales litora nec consequat scelerisque porta proin habitasse. Eros integer venenatis sodales ac vel netus hendrerit metus. Per elementum auctor tortor pulvinar cursus quis. Venenatis elit litora lacus risus in nullam risus habitasse. Porta vulputate primis tincidunt aliquam odio ipsum tempus. Proin curabitur ipsum nascetur in dolor proin cras. Cubilia pharetra scelerisque congue placerat facilisis.</p>
-        <p>Lacinia est cursus commodo purus natoque scelerisque interdum imperdiet. Litora sem egestas ex nostra; suscipit curae ipsum sit. Metus nullam nostra id tristique facilisis? Sodales proin proin rutrum tristique nullam. Euismod porta vestibulum dictumst pulvinar odio morbi vitae. Imperdiet bibendum mattis lobortis metus netus dolor rutrum a malesuada. Semper proin faucibus volutpat torquent congue fusce velit, morbi est. Neque quis laoreet curae elit nam sociosqu. Suspendisse quisque ut tempor nam massa orci efficitur eu.</p>
-        <p>Ipsum nulla tincidunt, imperdiet aliquam cubilia tempor lobortis tempus. Sollicitudin duis consequat nec commodo mollis etiam. Scelerisque rutrum dolor euismod nam fusce eget curabitur tempus diam. Nibh nulla sapien mauris eu viverra mus. Ultricies cubilia eleifend sit vestibulum lacus donec. Ut orci hac eros class tristique efficitur turpis. Est nec elementum duis pharetra netus porttitor?</p>
-        <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Volutpat lacus aenean tellus porttitor molestie. Gravida dolor facilisis malesuada hendrerit consequat. Lacinia velit porta mi augue, id mauris purus. Quisque iaculis nunc habitasse eu eu eros. Accumsan posuere himenaeos leo pharetra efficitur. Vel semper sodales himenaeos non viverra. Sapien eros iaculis nullam sollicitudin porttitor quis vivamus sollicitudin quisque.</p>
-        <p>Nunc posuere libero taciti; quisque magnis euismod magnis. Aliquam condimentum nascetur leo nam commodo neque nostra. Curae lectus diam proin nostra convallis mus facilisis sit. Maximus tempus leo curabitur consectetur sociosqu sed. Integer netus ullamcorper aliquam hendrerit aenean turpis ornare. Pulvinar nunc curabitur est rhoncus; bibendum fusce at. Mattis ex consequat condimentum dapibus dignissim ipsum. Primis lobortis commodo placerat cras augue magnis nostra.</p>
-        <p>Consequat pellentesque mauris eros; litora mattis diam? Cubilia praesent eleifend vel suscipit faucibus torquent pharetra parturient? Imperdiet sodales litora nec consequat scelerisque porta proin habitasse. Eros integer venenatis sodales ac vel netus hendrerit metus. Per elementum auctor tortor pulvinar cursus quis. Venenatis elit litora lacus risus in nullam risus habitasse. Porta vulputate primis tincidunt aliquam odio ipsum tempus. Proin curabitur ipsum nascetur in dolor proin cras. Cubilia pharetra scelerisque congue placerat facilisis.</p>
-        <p>Lacinia est cursus commodo purus natoque scelerisque interdum imperdiet. Litora sem egestas ex nostra; suscipit curae ipsum sit. Metus nullam nostra id tristique facilisis? Sodales proin proin rutrum tristique nullam. Euismod porta vestibulum dictumst pulvinar odio morbi vitae. Imperdiet bibendum mattis lobortis metus netus dolor rutrum a malesuada. Semper proin faucibus volutpat torquent congue fusce velit, morbi est. Neque quis laoreet curae elit nam sociosqu. Suspendisse quisque ut tempor nam massa orci efficitur eu.</p>
-        <p>Ipsum nulla tincidunt, imperdiet aliquam cubilia tempor lobortis tempus. Sollicitudin duis consequat nec commodo mollis etiam. Scelerisque rutrum dolor euismod nam fusce eget curabitur tempus diam. Nibh nulla sapien mauris eu viverra mus. Ultricies cubilia eleifend sit vestibulum lacus donec. Ut orci hac eros class tristique efficitur turpis. Est nec elementum duis pharetra netus porttitor?</p>
-        <br>
-    </div>
-    <div id="page2" class="content-section">
-        <h2>Page 2</h2>
-        <br>
-        <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Volutpat lacus aenean tellus porttitor molestie. Gravida dolor facilisis malesuada hendrerit consequat. Lacinia velit porta mi augue, id mauris purus. Quisque iaculis nunc habitasse eu eu eros. Accumsan posuere himenaeos leo pharetra efficitur. Vel semper sodales himenaeos non viverra. Sapien eros iaculis nullam sollicitudin porttitor quis vivamus sollicitudin quisque.</p>
-        <p>Nunc posuere libero taciti; quisque magnis euismod magnis. Aliquam condimentum nascetur leo nam commodo neque nostra. Curae lectus diam proin nostra convallis mus facilisis sit. Maximus tempus leo curabitur consectetur sociosqu sed. Integer netus ullamcorper aliquam hendrerit aenean turpis ornare. Pulvinar nunc curabitur est rhoncus; bibendum fusce at. Mattis ex consequat condimentum dapibus dignissim ipsum. Primis lobortis commodo placerat cras augue magnis nostra.</p>
-        <p>Consequat pellentesque mauris eros; litora mattis diam? Cubilia praesent eleifend vel suscipit faucibus torquent pharetra parturient? Imperdiet sodales litora nec consequat scelerisque porta proin habitasse. Eros integer venenatis sodales ac vel netus hendrerit metus. Per elementum auctor tortor pulvinar cursus quis. Venenatis elit litora lacus risus in nullam risus habitasse. Porta vulputate primis tincidunt aliquam odio ipsum tempus. Proin curabitur ipsum nascetur in dolor proin cras. Cubilia pharetra scelerisque congue placerat facilisis.</p>
-        <p>Lacinia est cursus commodo purus natoque scelerisque interdum imperdiet. Litora sem egestas ex nostra; suscipit curae ipsum sit. Metus nullam nostra id tristique facilisis? Sodales proin proin rutrum tristique nullam. Euismod porta vestibulum dictumst pulvinar odio morbi vitae. Imperdiet bibendum mattis lobortis metus netus dolor rutrum a malesuada. Semper proin faucibus volutpat torquent congue fusce velit, morbi est. Neque quis laoreet curae elit nam sociosqu. Suspendisse quisque ut tempor nam massa orci efficitur eu.</p>
-        <p>Ipsum nulla tincidunt, imperdiet aliquam cubilia tempor lobortis tempus. Sollicitudin duis consequat nec commodo mollis etiam. Scelerisque rutrum dolor euismod nam fusce eget curabitur tempus diam. Nibh nulla sapien mauris eu viverra mus. Ultricies cubilia eleifend sit vestibulum lacus donec. Ut orci hac eros class tristique efficitur turpis. Est nec elementum duis pharetra netus porttitor?</p>
-        <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Volutpat lacus aenean tellus porttitor molestie. Gravida dolor facilisis malesuada hendrerit consequat. Lacinia velit porta mi augue, id mauris purus. Quisque iaculis nunc habitasse eu eu eros. Accumsan posuere himenaeos leo pharetra efficitur. Vel semper sodales himenaeos non viverra. Sapien eros iaculis nullam sollicitudin porttitor quis vivamus sollicitudin quisque.</p>
-        <p>Nunc posuere libero taciti; quisque magnis euismod magnis. Aliquam condimentum nascetur leo nam commodo neque nostra. Curae lectus diam proin nostra convallis mus facilisis sit. Maximus tempus leo curabitur consectetur sociosqu sed. Integer netus ullamcorper aliquam hendrerit aenean turpis ornare. Pulvinar nunc curabitur est rhoncus; bibendum fusce at. Mattis ex consequat condimentum dapibus dignissim ipsum. Primis lobortis commodo placerat cras augue magnis nostra.</p>
-        <p>Consequat pellentesque mauris eros; litora mattis diam? Cubilia praesent eleifend vel suscipit faucibus torquent pharetra parturient? Imperdiet sodales litora nec consequat scelerisque porta proin habitasse. Eros integer venenatis sodales ac vel netus hendrerit metus. Per elementum auctor tortor pulvinar cursus quis. Venenatis elit litora lacus risus in nullam risus habitasse. Porta vulputate primis tincidunt aliquam odio ipsum tempus. Proin curabitur ipsum nascetur in dolor proin cras. Cubilia pharetra scelerisque congue placerat facilisis.</p>
-        <p>Lacinia est cursus commodo purus natoque scelerisque interdum imperdiet. Litora sem egestas ex nostra; suscipit curae ipsum sit. Metus nullam nostra id tristique facilisis? Sodales proin proin rutrum tristique nullam. Euismod porta vestibulum dictumst pulvinar odio morbi vitae. Imperdiet bibendum mattis lobortis metus netus dolor rutrum a malesuada. Semper proin faucibus volutpat torquent congue fusce velit, morbi est. Neque quis laoreet curae elit nam sociosqu. Suspendisse quisque ut tempor nam massa orci efficitur eu.</p>
-        <p>Ipsum nulla tincidunt, imperdiet aliquam cubilia tempor lobortis tempus. Sollicitudin duis consequat nec commodo mollis etiam. Scelerisque rutrum dolor euismod nam fusce eget curabitur tempus diam. Nibh nulla sapien mauris eu viverra mus. Ultricies cubilia eleifend sit vestibulum lacus donec. Ut orci hac eros class tristique efficitur turpis. Est nec elementum duis pharetra netus porttitor?</p>
-        <br>
-    </div>
-    <div id="page3" class="content-section">
-        <h2>Page 3</h2>
-        <br>
-        <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Volutpat lacus aenean tellus porttitor molestie. Gravida dolor facilisis malesuada hendrerit consequat. Lacinia velit porta mi augue, id mauris purus. Quisque iaculis nunc habitasse eu eu eros. Accumsan posuere himenaeos leo pharetra efficitur. Vel semper sodales himenaeos non viverra. Sapien eros iaculis nullam sollicitudin porttitor quis vivamus sollicitudin quisque.</p>
-        <p>Nunc posuere libero taciti; quisque magnis euismod magnis. Aliquam condimentum nascetur leo nam commodo neque nostra. Curae lectus diam proin nostra convallis mus facilisis sit. Maximus tempus leo curabitur consectetur sociosqu sed. Integer netus ullamcorper aliquam hendrerit aenean turpis ornare. Pulvinar nunc curabitur est rhoncus; bibendum fusce at. Mattis ex consequat condimentum dapibus dignissim ipsum. Primis lobortis commodo placerat cras augue magnis nostra.</p>
-        <p>Consequat pellentesque mauris eros; litora mattis diam? Cubilia praesent eleifend vel suscipit faucibus torquent pharetra parturient? Imperdiet sodales litora nec consequat scelerisque porta proin habitasse. Eros integer venenatis sodales ac vel netus hendrerit metus. Per elementum auctor tortor pulvinar cursus quis. Venenatis elit litora lacus risus in nullam risus habitasse. Porta vulputate primis tincidunt aliquam odio ipsum tempus. Proin curabitur ipsum nascetur in dolor proin cras. Cubilia pharetra scelerisque congue placerat facilisis.</p>
-        <p>Lacinia est cursus commodo purus natoque scelerisque interdum imperdiet. Litora sem egestas ex nostra; suscipit curae ipsum sit. Metus nullam nostra id tristique facilisis? Sodales proin proin rutrum tristique nullam. Euismod porta vestibulum dictumst pulvinar odio morbi vitae. Imperdiet bibendum mattis lobortis metus netus dolor rutrum a malesuada. Semper proin faucibus volutpat torquent congue fusce velit, morbi est. Neque quis laoreet curae elit nam sociosqu. Suspendisse quisque ut tempor nam massa orci efficitur eu.</p>
-        <p>Ipsum nulla tincidunt, imperdiet aliquam cubilia tempor lobortis tempus. Sollicitudin duis consequat nec commodo mollis etiam. Scelerisque rutrum dolor euismod nam fusce eget curabitur tempus diam. Nibh nulla sapien mauris eu viverra mus. Ultricies cubilia eleifend sit vestibulum lacus donec. Ut orci hac eros class tristique efficitur turpis. Est nec elementum duis pharetra netus porttitor?</p>
-        <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Volutpat lacus aenean tellus porttitor molestie. Gravida dolor facilisis malesuada hendrerit consequat. Lacinia velit porta mi augue, id mauris purus. Quisque iaculis nunc habitasse eu eu eros. Accumsan posuere himenaeos leo pharetra efficitur. Vel semper sodales himenaeos non viverra. Sapien eros iaculis nullam sollicitudin porttitor quis vivamus sollicitudin quisque.</p>
-        <p>Nunc posuere libero taciti; quisque magnis euismod magnis. Aliquam condimentum nascetur leo nam commodo neque nostra. Curae lectus diam proin nostra convallis mus facilisis sit. Maximus tempus leo curabitur consectetur sociosqu sed. Integer netus ullamcorper aliquam hendrerit aenean turpis ornare. Pulvinar nunc curabitur est rhoncus; bibendum fusce at. Mattis ex consequat condimentum dapibus dignissim ipsum. Primis lobortis commodo placerat cras augue magnis nostra.</p>
-        <p>Consequat pellentesque mauris eros; litora mattis diam? Cubilia praesent eleifend vel suscipit faucibus torquent pharetra parturient? Imperdiet sodales litora nec consequat scelerisque porta proin habitasse. Eros integer venenatis sodales ac vel netus hendrerit metus. Per elementum auctor tortor pulvinar cursus quis. Venenatis elit litora lacus risus in nullam risus habitasse. Porta vulputate primis tincidunt aliquam odio ipsum tempus. Proin curabitur ipsum nascetur in dolor proin cras. Cubilia pharetra scelerisque congue placerat facilisis.</p>
-        <p>Lacinia est cursus commodo purus natoque scelerisque interdum imperdiet. Litora sem egestas ex nostra; suscipit curae ipsum sit. Metus nullam nostra id tristique facilisis? Sodales proin proin rutrum tristique nullam. Euismod porta vestibulum dictumst pulvinar odio morbi vitae. Imperdiet bibendum mattis lobortis metus netus dolor rutrum a malesuada. Semper proin faucibus volutpat torquent congue fusce velit, morbi est. Neque quis laoreet curae elit nam sociosqu. Suspendisse quisque ut tempor nam massa orci efficitur eu.</p>
-        <p>Ipsum nulla tincidunt, imperdiet aliquam cubilia tempor lobortis tempus. Sollicitudin duis consequat nec commodo mollis etiam. Scelerisque rutrum dolor euismod nam fusce eget curabitur tempus diam. Nibh nulla sapien mauris eu viverra mus. Ultricies cubilia eleifend sit vestibulum lacus donec. Ut orci hac eros class tristique efficitur turpis. Est nec elementum duis pharetra netus porttitor?</p>
-        <br>
-    </div>
-</div>
-    <!--Personal scripts-->
     <script src="scripts.js"></script>
-
-    <!--Bootstrap scripts-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

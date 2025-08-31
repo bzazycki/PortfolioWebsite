@@ -5,6 +5,10 @@ body {
     padding-top: 58px;
 }
 
+html {
+  scrollbar-gutter: stable;
+}
+
 h2 {
     font-weight: 700;
     font-size: xxx-large;
@@ -93,3 +97,26 @@ h2 {
     width: 70%;
     margin-top: 3rem !important;
 }
+
+a {
+  text-decoration: none; 
+  color: #AC9E9A;
+  text-decoration: underline;  
+}
+
+.info-text {
+    font-size: 18px;
+}
+
+.column-header {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.fab, .far, .fa-solid{
+    color: white;
+}
+
+
+
+
